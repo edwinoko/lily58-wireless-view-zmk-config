@@ -22,11 +22,11 @@
 
             display-name = "Keys";
             bindings = <
-&kp ESC    &kp N1  &kp N2  &kp N3    &kp N4     &kp N5                              &kp N6  &kp N7     &kp N8     &kp N9   &kp N0    &kp BACKSLASH
-&kp TAB    &kp Q   &kp W   &kp E     &kp R      &kp T                               &kp Y   &kp U      &kp I      &kp O    &kp P     &kp BACKSPACE
-&kp LCTRL  &kp A   &kp S   &kp D     &kp F      &kp G                               &kp H   &kp J      &kp K      &kp L    &kp SEMI  &kp SINGLE_QUOTE
-&kp LSHFT  &kp Z   &kp X   &kp C     &kp V      &kp B   &kp LBKT       &kp RBKT     &kp N   &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
-                           &kp LALT  &kp MINUS  &mo 1   &lt 4 SPACE    &lt 3 ENTER  &mo 2   &kp GRAVE  &kp RGUI
+&kp ESC    &kp N1  &kp N2  &kp N3    &kp N4     &kp N5                                  &kp N6     &kp N7     &kp N8     &kp N9   &kp N0    &kp BACKSLASH
+&kp TAB    &kp Q   &kp W   &kp E     &kp R      &kp T                                   &kp Y      &kp U      &kp I      &kp O    &kp P     &kp BACKSPACE
+&kp LCTRL  &kp A   &kp S   &kp D     &kp F      &kp G                                   &kp H      &kp J      &kp K      &kp L    &kp SEMI  &kp SINGLE_QUOTE
+&kp LSHFT  &kp Z   &kp X   &kp C     &kp V      &kp B       &kp LBKT       &kp RBKT     &kp N      &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
+                           &kp LALT  &kp MINUS  &lt 1 HOME  &lt 4 SPACE    &lt 3 ENTER  &lt 2 END  &kp GRAVE  &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -72,6 +72,8 @@
 &kp CAPSLOCK  &trans             &kp C_AC_EXIT  &kp CAPSLOCK  &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
                                                 &trans        &trans     &trans     &trans    &trans  &trans  &trans  &trans
             >;
+
+            label = "Left";
         };
 
         right_accent {
@@ -82,6 +84,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &kp MINUS  &trans    &trans  &kp BACKSLASH  &trans
                         &trans  &trans  &trans  &trans    &trans  &trans    &trans     &trans
             >;
+
+            label = "Right";
         };
     };
 };
