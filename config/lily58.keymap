@@ -1,3 +1,4 @@
+
 /*
  * Copyright (c) 2020 The ZMK Contributors
  *
@@ -21,17 +22,17 @@
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
         hrm: home_row_mods {
-	    compatible = "zmk,behavior-hold-tap";
-	    label = "HRM";
+	    	compatible = "zmk,behavior-hold-tap";
+	    	label = "HRM";
+	    	#binding-cells = <2>;
 
-	    #binding-cells = <2>;
+	    	tapping-term-ms = <230>;
+	    	quick-tap-ms = <0>;
 
-	    tapping-term-ms = <250>;
-	    quick-tap-ms = <0>;
-
-	    flavor = "tap-preferred";
-	    hold-trigger-key-positions = <1 2 3 4 7 8 9 10>;
-	};
+	    	flavor = "tap-preferred";
+			bindings = <&kp>, <&kp>;
+	    	hold-trigger-key-positions = <1 2 3 4 7 8 9 10>;
+		};
     };
 
     keymap {
