@@ -92,7 +92,7 @@
 
         bluetooth_layer {
             bindings = <
-&bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans  &kp C_PREVIOUS   &kp C_PLAY_PAUSE  &kp C_NEXT     &trans  &trans
+&bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans  &kp C_PREVIOUS   &kp C_PLAY_PAUSE  &kp C_NEXT     &trans  &to 5
 &bootloader     &trans        &trans        &trans        &trans        &trans                          &trans  &kp INSERT       &kp HOME          &kp PAGE_UP    &trans  &trans
 &studio_unlock  &trans        &trans        &trans        &trans        &trans                          &trans  &kp C_PAUSE      &kp END           &kp PAGE_DOWN  &trans  &trans
 &trans          &trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans  &kp PRINTSCREEN  &trans            &trans         &trans  &trans
@@ -102,7 +102,7 @@
             label = "bluetooth";
         };
 
-        mouse {
+        mouse_layer {
             bindings = <
 &trans  &mkp MB1        &mkp MB2        &mkp MB3         &mkp MB4  &mkp MB5                    &trans  &trans          &trans          &trans           &trans  &trans
 &trans  &trans          &msc SCRL_UP    &trans           &trans    &trans                      &trans  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &trans  &trans
@@ -110,6 +110,20 @@
 &trans  &trans          &trans          &trans           &trans    &trans    &trans    &trans  &trans  &trans          &trans          &trans           &trans  &trans
                                         &trans           &trans    &trans    &trans    &trans  &trans  &trans          &trans
             >;
+
+            label = "mouse";
+        };
+
+        Gaming {
+            bindings = <
+&to 0   &trans  &trans          &trans          &trans           &trans                       &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6
+&trans  &trans  &trans          &kp LEFT_ARROW  &trans           &trans                       &trans  &kp Q   &kp W   &kp E   &kp R   &kp T
+&trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans                       &trans  &kp A   &kp S   &kp D   &kp F   &kp G
+&trans  &trans  &trans          &trans          &trans           &trans  &trans    &trans     &trans  &kp Z   &kp X   &kp C   &kp V   &kp LCTRL
+                                &trans          &trans           &trans  &trans    &kp SPACE  &trans  &trans  &trans
+            >;
+
+            label = "Gaming";
         };
     };
 };
